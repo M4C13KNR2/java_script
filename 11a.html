@@ -1,0 +1,35 @@
+<!-napisac program ktory po wczytaniu przeciwprostokatneh trojkata z_kow oraz dowolnego boku b_kow obliczy
+-obwod
+-pole
+-katy
+
+a=sqrt(c*c-b*b)
+obw=(a+b+c)
+p=(a*b)/2  ->
+
+
+<html>
+<body>
+<div style="color:red;font-size:50px;">
+<script language="JavaScript">
+var liczba1=prompt("c=","");
+var liczba2=prompt("b=","");
+var c_kow=parseFloat(liczba1);
+var b_kow=parseFloat(liczba2);
+document.write("c="+c_kow+"<br>");
+document.write("b="+b_kow+"<br>");
+a_kow=Math.sqrt(c_kow*c_kow-b_kow*b_kow);
+document.write("a="+a_kow.toFixed(2)+"<br>");
+p_kow=a_kow*b_kow/2;
+document.write("p="+p_kow.toFixed(2)+" cm^2"+"<br>");
+obw_kow=a_kow+b_kow+c_kow;
+document.write("obw="+obw_kow.toFixed(2)+" cm"+"<br>");
+sin_beta_kow=b_kow/c_kow;
+beta_kow=Math.asin(sin_beta_kow)*180/Math.PI;
+document.write("beta="+beta_kow.toFixed(2)+" stopni"+"<br>");
+alfa_kow=90-beta_kow;
+document.write("alfa="+alfa_kow.toFixed(2)+" stopni"+"<br>");
+</script>
+</div>
+</body>
+</html>
