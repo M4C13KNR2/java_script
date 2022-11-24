@@ -2,20 +2,23 @@
 <body>
 <div style="color:red;font-size:50px;">
 <script language="JavaScript">
- let n = prompt("c =", "");
-            let m = prompt("b =", "");
-            let c_skie = parseFloat(n);
-            let b = parseFloat(m);
-            let a = (Math.sqrt(c_skie * c_skie - b * b)).toFixed(2);
-            let obw1 = a + b + c_skie;
-            let obw = parseFloat(obw1);
-            obw = obw.toFixed(2);
-            let pole = ((a * b) / 2).toFixed(2);
-            let sin_Beta = (b / c_skie).toFixed(2);
-            let beta = (Math.sin(sin_Beta) * 180 / 3.14).toFixed(2);
-            let alfa = (90 - beta).toFixed(2);
-
-            document.write(" a =" + a + "obw =" + obw + " pole= " + pole + " beta = " + beta + " alfa =" + alfa);
+ var liczba1=prompt("c=","");
+var liczba2=prompt("b=","");
+var c_kow=parseFloat(liczba1);
+var b_kow=parseFloat(liczba2);
+document.write("c="+c_kow+"<br>");
+document.write("b="+b_kow+"<br>");
+a_kow=Math.sqrt(c_kow*c_kow-b_kow*b_kow);
+document.write("a="+a_kow.toFixed(2)+"<br>");
+p_kow=a_kow*b_kow/2;
+document.write("p="+p_kow.toFixed(2)+" cm^2"+"<br>");
+obw_kow=a_kow+b_kow+c_kow;
+document.write("obw="+obw_kow.toFixed(2)+" cm"+"<br>");
+sin_beta_kow=b_kow/c_kow;
+beta_kow=Math.asin(sin_beta_kow)*180/Math.PI;
+document.write("beta="+beta_kow.toFixed(2)+" stopni"+"<br>");
+alfa_kow=90-beta_kow;
+document.write("alfa="+alfa_kow.toFixed(2)+" stopni"+"<br>");
 </script>
 </div>
 </body>
